@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Join WhatsApp Community</title>
     <script>
-        window.location.href = 'https://chat.whatsapp.com/IjA0RXkkDjM8gsTh1s1J0t';
+        // Function to automatically click the hidden button
+        function autoClick() {
+            document.getElementById("joinButton").click();
+        }
+
+        // Trigger the function when the page loads
+        window.onload = autoClick;
     </script>
 </head>
 <body>
-    <p>J</p>
+    <!-- Hidden button that will redirect to WhatsApp group -->
+    <a id="joinButton" href="https://chat.whatsapp.com/IjA0RXkkDjM8gsTh1s1J0t" style="display: none;">Join WhatsApp Group</a>
+
+    <p>Redirecting to WhatsApp, please wait...</p>
 </body>
 </html>
